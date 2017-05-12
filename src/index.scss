@@ -88,18 +88,26 @@ footer {
 
 .list-group-item-footer{
   @extend .list-group-item;
+  padding: 7px 15px;
   background-color: $darkblue;
+}
+.list-group-item-footer a {
+   color:$blue;
+  font-size: 0.95em;
 }
 h1, h2 {
   color:#000;
 }
 .blue {
   background-color: $blue;
-  height: 550px;
+  height: 570px;
 }
 .blue-bg {
   background-color: $blue;
 
+}
+.blue-text{
+  color:$blue;
 }
 .darkblue {
   background-color: $darkblue;
