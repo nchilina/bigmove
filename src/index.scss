@@ -1,3 +1,109 @@
+@import "colors";
 body {
-  background-color: lightgrey;
+  background-color: $bg-color;
+}
+
+body {
+  padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+}
+
+.navbar-fixed-top .nav {
+  padding: 5px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+  padding: 0 15px;
+}
+
+footer {
+  padding: 30px 0;
+}
+
+@media(min-width:768px) {
+  body {
+    padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  }
+
+  .navbar-fixed-top .navbar-brand {
+    padding: 15px 0;
+  }
+}
+
+.navbar-fixed-top .navbar-brand {
+  padding: 0px 15px;
+  min-height: 90px;
+
+}
+.navbar-fixed-top {
+  background-color:#d4e3ff;
+  border-color:#d4e3ff;
+}
+
+.navbar-nav {
+  float: right;
+  margin: 0;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+  background-color: #d4e3ff;
+}
+.navbar-inverse .navbar-toggle {
+  border-color: #000;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #000;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #000;
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+@media (min-width: 768px){
+          .navbar-nav > li > a {
+            padding-top: 25px;
+            padding-bottom: 15px;
+          }
+}
+
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+  color: #4066ae;
+  background-color: transparent;
+}
+
+.list-group-item {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  margin-bottom: -1px;
+  background-color: #d4e3ff;;
+  border: 0px solid #fff;
+}
+.list-group-item a {
+  color: #4168ad;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.list-group-item-footer{
+  @extend .list-group-item;
+  background-color: $darkblue;
+}
+h1, h2 {
+  color:#000;
+}
+.blue {
+  background-color: $blue;
+  height: 550px;
+}
+.blue-bg {
+  background-color: $blue;
+
+}
+.darkblue {
+  background-color: $darkblue;
+}
+.wide {
+  width: 100%;
 }
